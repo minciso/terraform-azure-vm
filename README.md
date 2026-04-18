@@ -28,6 +28,13 @@ Provisions a Linux virtual machine on Microsoft Azure using Terraform.
 
 ```bash
 az login
+az logout
+
+#how to login back to azure
+az login --use-device-code
+*copy the link and paste the code
+
+az ad sp create-for-rbac --name "terraform" --role Contributor --scopes /subscriptions/{subcription id}
 
 #check my azure login
 az account show 2>&1
