@@ -28,6 +28,10 @@ Provisions a Linux virtual machine on Microsoft Azure using Terraform.
 
 ```bash
 az login
+
+#check my azure login
+az account show 2>&1
+az account list --output table 2>&1
 ```
 
 ## Usage
